@@ -31,7 +31,14 @@ public class Juego {
     }
 
     public int getCantidadJugadores() {
-        //TODO
+        //DONE
+        int cantidad = 0;
+        for (Jugador jugador : jugadores){
+            if (jugador.getEstado() == Estado.JUGANDO) {
+                cantidad++;
+            }
+        }
+        return cantidad;
     }
 
     public int getPuntajeMaximo() {

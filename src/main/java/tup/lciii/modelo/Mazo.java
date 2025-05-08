@@ -1,7 +1,5 @@
 package tup.lciii.modelo;
 
-import tup.lciii.modelo.enums.Palo;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -23,7 +21,8 @@ public class Mazo {
      * @return El tamaño del mazo, es decir, el número de cartas.
      */
     public int getMazoLength() {
-        //TODO
+        //DONE
+        return mazo.size();
     }
 
     /**
@@ -55,7 +54,8 @@ public class Mazo {
      * @see java.util.Collections#shuffle(List)
      */
     public void mezclarMazo() {
-        //TODO
+        //DONE
+        Collections.shuffle(mazo);
     }
 
     /**
